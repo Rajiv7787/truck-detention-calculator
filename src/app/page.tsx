@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ToolLayout from "@/components/ToolLayout";
 import FAQ from "@/components/FAQ";
-import PercentageCalculator from "@/components/PercentageCalculator";
+import DetentionCalculator from "@/components/DetentionCalculator";
 import StructuredData from "@/components/StructuredData";
 import { toolConfig } from "@/lib/tool-config";
 
@@ -37,7 +37,7 @@ export default function Home() {
             </span>
           </div>
 
-          <PercentageCalculator />
+          <DetentionCalculator />
         </div>
       </ToolLayout>
 
@@ -76,7 +76,7 @@ export default function Home() {
 
           <div className="rounded-2xl border border-slate-200 bg-white p-6">
             <h3 className="text-lg font-bold text-slate-900">
-              Formula
+              How Detention Pay Is Calculated
             </h3>
 
             <div className="mt-5 rounded-xl bg-slate-50 p-4">

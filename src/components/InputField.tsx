@@ -1,7 +1,7 @@
 type InputFieldProps = {
   label: string;
   name: string;
-  type?: "text" | "number" | "email" | "url";
+  type?: "text" | "number" | "email" | "url" | "time";
   placeholder?: string;
   value?: string;
   onChange?: (value: string) => void;
