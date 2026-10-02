@@ -9,7 +9,7 @@ export const toolConfig = {
 
   category: "Trucking & Logistics",
 
-  contactEmail: "hello@example.com",
+  contactEmail: "Rajivsharmabba@gmail.com",
 
   seo: {
     title: "Truck Detention Pay Calculator - Calculate Detention",
