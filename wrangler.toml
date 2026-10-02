@@ -1,0 +1,2 @@
+name = "truck-detention-calculator"
+pages_build_output_dir = "./out"
