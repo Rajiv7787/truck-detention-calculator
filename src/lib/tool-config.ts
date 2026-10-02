@@ -12,9 +12,9 @@ export const toolConfig = {
   contactEmail: "hello@example.com",
 
   seo: {
-    title: "Truck Detention Pay Calculator - Free Detention Calculator",
+    title: "Truck Detention Pay Calculator - Calculate Detention",
     description:
-      "Calculate truck detention time and estimate detention pay using arrival, appointment, release, free time and hourly detention rate.",
+      "Calculate truck detention time and estimate detention pay using arrival, appointment, release, free time, and hourly detention rate.",
     keywords: [
       "truck detention calculator",
       "detention pay calculator",
@@ -35,79 +35,93 @@ export const toolConfig = {
 
   content: {
     intro:
-      "Use this free truck detention pay calculator to estimate billable detention time and potential detention pay. Enter the driver's arrival time, appointment time, release time, free time and detention rate to calculate the result.",
+      "Use this free truck detention pay calculator to calculate detention time and estimate detention pay for a pickup or delivery. Enter the driver's arrival time, appointment time, release time, free time, and hourly detention rate to determine the billable detention time and estimated amount.",
 
     howToUse: [
-      "Select how the detention clock should start: arrival, appointment, or the later of the two.",
-      "Enter the driver's arrival time and appointment time when applicable.",
-      "Enter the release or departure time from the facility.",
-      "Enter the free time and detention rate specified by your load or carrier agreement.",
-      "Choose the billing increment and rounding method.",
-      "Click Calculate Detention Pay to see the estimated billable detention and pay.",
+      "Choose when the detention clock should start: driver arrival, appointment time, or the later of the two.",
+      "Enter the driver's arrival time and appointment time when required.",
+      "Enter the release or departure time when the driver was released from the pickup or delivery facility.",
+      "Enter the free-time allowance and hourly detention rate stated in the applicable load or carrier agreement.",
+      "Choose the billing increment and rounding method that match the applicable detention terms.",
+      "Click Calculate Detention Pay to see total facility time, billable detention, billable hours, and estimated detention pay.",
     ],
 
     formula:
-      "Estimated detention pay = Billable detention hours × Detention rate",
+      "Billable detention time = Total facility time − Free time. Estimated detention pay = Billable detention hours × Detention rate.",
 
     example:
-      "Example: if 3.5 hours are billable and the agreed detention rate is $50 per hour, the estimated detention pay is $175.",
+      "Example: if a driver spends 5 hours 30 minutes at a facility and the agreed free time is 2 hours, the billable detention is 3 hours 30 minutes. At a detention rate of $50 per hour, the estimated detention pay is $175.",
 
     benefits: [
-      "Estimate detention pay quickly",
+      "Estimate truck detention pay quickly",
       "Calculate billable detention time",
-      "Compare different detention rates",
-      "Useful for carriers and dispatchers",
-      "Works directly in your browser",
-      "No installation required",
+      "Use arrival and appointment timing",
+      "Apply custom free-time allowances",
+      "Calculate detention using hourly rates",
+      "Support 15, 30, and 60-minute billing increments",
+      "Choose rounding rules based on load terms",
+      "Works on desktop and mobile devices",
     ],
   },
 
   features: [
-    "Free to use",
-    "Arrival and appointment timing",
+    "Free online detention calculator",
+    "Arrival and appointment timing options",
     "Custom free-time allowance",
-    "Custom detention rate",
+    "Custom hourly detention rate",
     "15, 30 and 60-minute billing increments",
-    "Multiple rounding options",
-    "Mobile friendly",
+    "Round up, round down or use exact time",
+    "Overnight detention calculation",
+    "Copyable detention calculation results",
+    "Mobile-friendly design",
   ],
 
   about: {
     title: "About Truck Detention Pay Calculator",
     description:
-      "This truck detention pay calculator helps carriers, owner-operators, dispatchers and logistics professionals estimate facility detention time and potential detention pay from the timing and rate information they provide.",
+      "This free truck detention pay calculator helps carriers, owner-operators, dispatchers, freight brokers and logistics professionals estimate detention time and potential detention pay at pickup and delivery facilities. Enter the applicable timing, free-time allowance and hourly detention rate to calculate billable detention based on the terms of your load or carrier agreement.",
   },
 
   faqs: [
     {
       question: "What is truck detention?",
       answer:
-        "Truck detention generally refers to time a driver spends waiting at a pickup or delivery facility beyond the applicable free-time period. The actual terms can vary by load, broker, carrier agreement and facility.",
+        "Truck detention is the time a driver spends waiting at a pickup or delivery facility beyond the applicable free-time period. Detention terms can vary by broker, carrier, facility, load and rate confirmation.",
     },
     {
-      question: "How is detention pay calculated?",
+      question: "How is truck detention pay calculated?",
       answer:
-        "A common calculation is billable detention hours multiplied by the applicable detention rate. Your actual agreement may use different rules for when the clock starts, free time, rounding or billing increments.",
+        "A common calculation is billable detention hours multiplied by the agreed hourly detention rate. Billable detention is generally the total facility time minus the applicable free-time allowance, subject to the terms of the load or carrier agreement.",
     },
     {
-      question: "What should I use as the detention start time?",
+      question: "When does the detention clock start?",
       answer:
-        "This calculator lets you choose arrival time, appointment time, or the later of arrival and appointment. Use the option that matches the terms applicable to your load.",
+        "The detention start time depends on the applicable load terms. This calculator lets you use the driver's arrival time, appointment time, or the later of arrival and appointment time.",
     },
     {
-      question: "What is free time in detention?",
+      question: "What is free time in truck detention?",
       answer:
-        "Free time is the amount of time allowed at a facility before detention may become billable. Enter the free-time allowance specified by the applicable load or carrier terms.",
+        "Free time is the amount of time allowed at a pickup or delivery facility before detention may become billable. Enter the free-time allowance stated in your rate confirmation or other applicable load terms.",
     },
     {
-      question: "What detention rate should I enter?",
+      question: "What detention rate should I use?",
       answer:
-        "Enter the hourly detention rate stated in the applicable rate confirmation, broker agreement or other load terms. Do not assume a universal detention rate.",
+        "Enter the hourly detention rate stated in the applicable rate confirmation, broker agreement, carrier agreement or other load terms. There is no single universal detention rate.",
     },
     {
-  question: "Can I use this calculator for overnight detention?",
-  answer:
-    "Yes. The calculator can handle an overnight period when the release time is earlier than the detention start time, treating the release as occurring on the following day. Multi-day detention should be verified against the applicable load terms.",
-},
+      question: "What does rounding mean in detention billing?",
+      answer:
+        "Rounding adjusts billable detention to the selected billing increment. For example, 3 hours 25 minutes rounded down to a 30-minute increment becomes 3 hours, while rounding up becomes 3 hours 30 minutes. Use the rule specified by the applicable load terms.",
+    },
+    {
+      question: "Can I calculate overnight detention?",
+      answer:
+        "Yes. If the release time is earlier than the detention start time, the calculator treats the release as occurring on the following day. Multi-day detention should be checked against the applicable load terms.",
+    },
+    {
+      question: "Can I use this calculator for pickup and delivery detention?",
+      answer:
+        "Yes. You can use it for either pickup or delivery detention as long as you enter the applicable arrival, appointment, release, free-time and detention-rate information.",
+    },
   ],
 };
