@@ -1,6 +1,8 @@
+import { toolConfig } from "@/lib/tool-config";
+
 export const metadata = {
   title: "Contact Us",
-  description: "Contact the ToolName team for questions, feedback, or support.",
+  description: `Contact the ${toolConfig.name} team for questions, feedback, or support.`,
 };
 
 export default function ContactPage() {
@@ -27,10 +29,10 @@ export default function ContactPage() {
           <p className="font-semibold text-gray-900">Email</p>
 
           <a
-            href="mailto:hello@example.com"
+            href={`mailto:${toolConfig.contactEmail}`}
             className="mt-2 inline-block text-blue-600 hover:underline"
           >
-            hello@example.com
+            {toolConfig.contactEmail}
           </a>
         </div>
 
